@@ -1,0 +1,61 @@
+name: language_translator
+description: Language Translator using Google ML Kit
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.5
+  google_fonts: ^6.2.1
+  # flutter_svg: ^2.0.9   # uncomment only if you'll use SVGs
+
+  # Translation API
+  translator: ^1.0.3+1
+
+  # Camera & Lifecycle (with proper namespace support)
+  camera: ^0.11.2
+  camera_android: ^0.10.10+5
+  camera_platform_interface: ^2.10.0
+  flutter_plugin_android_lifecycle: ^2.0.29
+
+  # Text-to-Speech & Speech-to-Text
+  flutter_tts: ^4.2.3
+  speech_to_text: ^7.3.0
+
+  # Sharing
+  share_plus: ^7.2.1
+
+  # Image picker
+  image_picker: ^1.1.2
+
+  # Google ML Kit (text recognition)
+  google_mlkit_text_recognition: ^0.15.0
+  
+  # Storage & State Management
+  shared_preferences: ^2.2.2
+  provider: ^6.1.1
+  intl: ^0.18.1
+  uuid: ^4.3.3
+  http: ^1.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  change_app_package_name: ^1.5.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/welcome.png
+    - assets/images/login.png
+    - assets/images/logo.png
